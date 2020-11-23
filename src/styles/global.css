@@ -1,3 +1,14 @@
-html {
-    background-color: #3b415f;
+html, body {
+    height: 100%;
+    margin: 0;
 }
+
+.container {
+    height: 100%;
+}
+
+body a {
+    font-size: 2rem;
+    color: #5080b6;
+}
+
