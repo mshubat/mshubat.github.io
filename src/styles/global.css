@@ -1,4 +1,4 @@
-html, body {
+html, body, #___gatsby, #gatsby-focus-wrapper {
     height: 100%;
     margin: 0;
 }
@@ -6,9 +6,3 @@ html, body {
 .container {
     height: 100%;
 }
-
-body a {
-    font-size: 2rem;
-    color: #5080b6;
-}
-

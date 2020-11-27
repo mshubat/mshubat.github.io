@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navLink {
+    width: 20rem;
+    text-align: center;
+    color: black;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: red;
+}
