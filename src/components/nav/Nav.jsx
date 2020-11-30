@@ -10,6 +10,7 @@ export const Nav = () => {
             <NavLink to="https://www.linkedin.com/in/mattshubat/">LinkedIn</NavLink>
             <NavLink to="https://github.com/mshubat">GitHub</NavLink>
             <NavLink to="https://www.hackerrank.com/mattshubat">HackerRank</NavLink>
+            <NavLink to="mailto:mattshubat@gmail.com">Email</NavLink>
         </nav>
     );
 }

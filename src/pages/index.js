@@ -12,7 +12,7 @@ export default function Home() {
   
   const prefix = "I am a ";
   const phrases = [
-    "full stack software developer.", 
+    "software developer. Nice to Meet you 😀", 
     "technology enthusiast.", 
     "problem solver.", 
     "geek.", 
