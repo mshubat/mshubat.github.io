@@ -2,98 +2,80 @@ import React from "react"
 import { useState, useEffect } from "react";
 import "milligram"
 import { Nav } from "../components/nav/Nav"
-import { Card } from "../components/Card"
+import { Header } from "../components/Header"
+import { Skills } from "../components/skills/Skills"
+import { Section } from "../components/section/Section"
 
 export default function Home() {
 
   const [description, setDescription] = useState('');
   
-  const prefix = "I am ";
-  const phrase = [
-    "a full stack software developer.", 
-    "a technology enthusiast.", 
-    "a problem solver.", 
-    "a geek.", 
-    "a Canadian. Nice to meet you 🍁", 
-    "a programmer",
+  const prefix = "I am a ";
+  const phrases = [
+    "full stack software developer.", 
+    "technology enthusiast.", 
+    "problem solver.", 
+    "geek.", 
+    "Canadian. Nice to meet you 🍁!", 
+    "programmer.",
   ];
 
   
-
-  function type(noun, i=0) {
+  /**
+   * Type the phrase provided. If the prefix is missing, it will type that first
+   * @param {*} phrase 
+   * @param {*} i 
+   */
+  function type(phrase, i=0) {
     let desc;
 
     if (i < prefix.length) {
       // type prefix
       desc = prefix.slice(0, i) + prefix[i];
       setDescription(desc);
-      setTimeout(() => type(noun, i+1), 50);
-    } else if (i < prefix.length + noun.length) {
+      setTimeout(() => type(phrase, i+1), 50);
+    } else if (i < prefix.length + phrase.length) {
       // type noun
-      desc = prefix + noun.slice(0, i-prefix.length) + noun[i-prefix.length];
+      desc = prefix + phrase.slice(0, i-prefix.length) + phrase[i-prefix.length];
       setDescription(desc);
-      setTimeout(() => type(noun, i+1), 50);
+      setTimeout(() => type(phrase, i+1), 50);
     } else {
         // erase noun...
-        setTimeout(() => erase(noun), 1000);
+        setTimeout(() => erase(phrase), 2000);
     }
   }
 
-  function erase(noun, lettersRemoved=0) {
-    let pi = phrase.indexOf(noun);
-    if (lettersRemoved <= noun.length) {
+  function erase(phrase, lettersRemoved=0) {
+    let pi = phrases.indexOf(phrase);
+    if (lettersRemoved <= phrase.length) {
       // remove text
-      setDescription(prefix + noun.slice(0, noun.length-lettersRemoved));
-      setTimeout(() => erase(noun, lettersRemoved+1), 40)
+      setDescription(prefix + phrase.slice(0, phrase.length-lettersRemoved));
+      setTimeout(() => erase(phrase, lettersRemoved+1), 40)
     } else {
       // type next phrase
-      setTimeout(() => type(phrase[(pi+1)%phrase.length], prefix.length), 1000);
+      setTimeout(() => type(phrases[(pi+1)%phrases.length], prefix.length), 1000);
     }
-
   }
 
-  useEffect(() => type(phrase[0]), []);
+  useEffect(() => type(phrases[0]), []);
 
   return (
     <div className="container">
       <Nav />
-      <Card 
+      <Header 
         title={"Hi, I'm Matt"}
-        align="center"
       >
         {description}
-      </Card>
+      </Header>
 
-      <div style={{margin: "0 auto 0 2rem", width: "70%", height: "30%"}}>
-        <h3>Experience</h3>
-        <h4>Technologies I have experience with</h4>
-        <ul>
-          <li>React</li>
-          <li>Javascript</li>
-          <li>HTML</li>
-          <li>CSS</li>          
-          <li>React</li>
-          <li>Javascript</li>
-          <li>HTML</li>
-          <li>CSS</li>          
-          <li>React</li>
-          <li>Javascript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>    
-      </div>
-
-      <div style={{margin: "0 2rem 0 auto", width: "70%", textAlign: "right"}}>
-        <h3>Projects</h3>
-        <h4>Thesis project and personal side projects</h4>
-        <ul>
-          <li>React</li>
-          <li>Javascript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>    
-      </div>
-
+      <Section 
+        title="Skills"
+        desc="These are some of the technologies that I have experience working with."
+        titleAlign="center"
+        descAlign="center"
+      >
+        <Skills />
+      </Section>
     </div>
   )
 }

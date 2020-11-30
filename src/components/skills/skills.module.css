@@ -1,0 +1,33 @@
+.skillGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* grid-template-columns: repeat(5, 13rem); */
+    /* grid-auto-rows: 13rem; */
+    grid-gap: 1rem; 
+}
+
+@media screen and (max-width: 600px) {
+    .skillGrid {
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+    }
+}
+
+.skillGrid > div::before { /* Make the aspect ratio of elements square */
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+  }
+
+  .skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 100%;
+    background-color: gainsboro;
+}
+
+.skill:hover {
+    opacity: 100%;
+    background-color: rgb(243, 106, 106);
+}

@@ -1,6 +1,6 @@
 import React from "react"
 
-export const Card = ({ title, width, children, align }) => {
+export const Header = ({ title, children }) => {
   const styles = {
     title: {
       fontSize: "50px",
@@ -14,7 +14,7 @@ export const Card = ({ title, width, children, align }) => {
   return (
     <div style={{margin: "20rem auto 20rem auto", width: "100%"}}>
       <h1 style={styles.title}>{title}</h1>
-      <p style={{margin: "0 auto", textAlign: align}}>
+      <p style={{margin: "0 auto", textAlign: "center", fontSize: "2rem"}}>
         {children}
       </p>
     </div>
