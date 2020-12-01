@@ -4,6 +4,7 @@ import "milligram"
 import { Nav } from "../components/nav/Nav"
 import { Header } from "../components/Header"
 import { Skills } from "../components/skills/Skills"
+import { Projects } from "../components/projects/Projects"
 import { Section } from "../components/section/Section"
 
 export default function Home() {
@@ -12,12 +13,13 @@ export default function Home() {
   
   const prefix = "I am a ";
   const phrases = [
-    "software developer. Nice to Meet you 😀", 
+    "software developer. Nice to Meet you 🤝", 
     "technology enthusiast.", 
     "problem solver.", 
     "geek.", 
     "Canadian. Nice to meet you 🍁!", 
     "programmer.",
+    "software engineer.",
   ];
 
   
@@ -75,6 +77,15 @@ export default function Home() {
         descAlign="center"
       >
         <Skills />
+      </Section>
+
+      <Section 
+        title="Projects"
+        desc="Some projects I have worked on, and am working on."
+        titleAlign="center"
+        descAlign="center"
+      >
+        <Projects />
       </Section>
     </div>
   )

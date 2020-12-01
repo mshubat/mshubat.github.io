@@ -19,15 +19,23 @@
     display: block;
   }
 
-  .skill {
+  .skill1, .skill2, .skill3, .skill4, .skill5 {
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 100%;
     background-color: gainsboro;
+    border-radius: 6px;
 }
 
-.skill:hover {
+.skill1:hover, .skill2:hover, .skill3:hover, .skill4:hover, .skill5:hover {
     opacity: 100%;
-    background-color: rgb(243, 106, 106);
+    color: white;
+}
+
+.skill1:hover {
+    background-color: rgb(243, 97, 97);
+}
+.skill2:hover {
+    background-color: rgb(85, 151, 238);
 }

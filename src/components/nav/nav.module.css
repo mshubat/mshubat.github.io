@@ -2,17 +2,18 @@ nav {
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .navLink {
-    width: 13rem;
+    width: 15rem;
     text-align: center;
-    color: black;
+    color: #606c76;
 }
 
 .navLink:hover {
     text-decoration: underline;
     text-underline-position: under;
-    text-decoration-color: red;
+    text-decoration-color:rgb(241, 67, 67);
 }
