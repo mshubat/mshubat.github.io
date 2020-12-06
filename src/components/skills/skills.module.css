@@ -7,35 +7,76 @@
     grid-gap: 1rem; 
 }
 
-@media screen and (max-width: 600px) {
-    .skillGrid {
-        grid-template-columns: repeat(3, minmax(100px, 1fr));
-    }
-}
-
 .skillGrid > div::before { /* Make the aspect ratio of elements square */
     content: "";
     padding-bottom: 100%;
     display: block;
   }
 
-  .skill1, .skill2, .skill3, .skill4, .skill5 {
+.skill1, .skill2, .skill3, .skill4, .skill5, .skill6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     opacity: 100%;
     background-color: gainsboro;
     border-radius: 6px;
+
 }
 
-.skill1:hover, .skill2:hover, .skill3:hover, .skill4:hover, .skill5:hover {
+.skill1:hover, .skill2:hover, .skill3:hover, .skill4:hover, .skill5:hover, .skill6 {
     opacity: 100%;
     color: white;
 }
 
-.skill1:hover {
-    background-color: rgb(243, 97, 97);
+.skill1:hover, .focusSkill1 {
+    background-color: #c25959;
 }
-.skill2:hover {
-    background-color: rgb(85, 151, 238);
+.skill2:hover, .focusSkill2 {
+    background-color: #A58981;
+}
+.skill3:hover, .focusSkill3 {
+    background-color: #3C579E;
+}
+.skill4:hover, .focusSkill4 {
+    background-color: #9E6463;
+}
+.skill5:hover, .focusSkill5 {
+    background-color: #FECC27;
+}
+
+.focusSkill {
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    display: block;
+    width: 80%;
+    height: auto;
+    border-radius: 6px;
+}
+.focusSkillHeading {
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+}
+.focusSkillDescription {
+    color: white;
+    margin: 2em;
+}
+
+
+@media screen and (max-width: 600px) {
+    .skillGrid {
+        grid-template-columns: repeat(3, minmax(90px, 1fr));
+    }
+    .focusSkill {
+        width: 100%;
+    }
+    .focusSkillHeading {
+        font-size: 2em;
+    }
+    .focusSkillDescription {
+        margin: 1em;
+    }
 }

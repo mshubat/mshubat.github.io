@@ -1,12 +1,12 @@
 import React from "react"
 import styles from "./nav.module.css"
 
-export const NavLink = ({ to, children }) => {
+export const NavItem = ({ children }) => {
 
 
   return (
-    <a className={styles.navLink} href={to}>
+    <div className={styles.navItem}>
       {children}
-    </a>
+    </div>
   )
 }
