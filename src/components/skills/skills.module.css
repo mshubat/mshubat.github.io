@@ -18,14 +18,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    opacity: 100%;
     background-color: gainsboro;
     border-radius: 6px;
 
 }
 
 .skill1:hover, .skill2:hover, .skill3:hover, .skill4:hover, .skill5:hover, .skill6 {
-    opacity: 100%;
     color: white;
 }
 
