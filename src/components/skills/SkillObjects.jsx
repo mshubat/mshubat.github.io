@@ -34,14 +34,14 @@ export const skills = {
     },
     Flutter: {
       info: `I have worked with Flutter to build mobile apps for iOS and Android. I particularly
-            love the ease of use of the Flutter framework to build UI's quickly. Coming from React, 
+            love the ease of use of the Flutter framework to build UIs quickly. Coming from React, 
             it is intuitive to pick up. I have experience with the widget lifecycle, routing, providers,
             services, and integration with firebase and the google cloud platform.`,
       icon: <SiFlutter />,
     },
     Firebase: {
       info: `I have experience designing collection and document layouts taking into account the 
-            applciation architecture in question. NoSQL design, and queries have become more 
+            application architecture in question. NoSQL design, and queries have become more 
             intuitive to me over time and I really enjoy the flexibility the Firebase provides.
             I also really like the Firebase streaming capability, when used in the right circumstances.`,
       icon: <SiFirebase />,
@@ -54,8 +54,8 @@ export const skills = {
     },
     SQL: {
       info: `I have experience working with SQL databases such as PostgreSQL, and MySQL. I am comfortable
-            writting queries to fetch data, join tables, updates records and so on. I also have
-            experience laying out the model strucutre for the domain at hand and evolving that structure
+            writing queries to fetch data, join tables, updates records and so on. I also have
+            experience laying out the model structure for the domain at hand and evolving that structure
             over time.`,
       icon: <SiPostgresql />,
     },
@@ -63,7 +63,7 @@ export const skills = {
       info: `As the first OO language I learnt, Java will always have a special place in my heart. Though
             it is often criticized for being verbose, I find it to be extremely intuitive for designing 
             an OO system, and its types provide for a secure and reliable feeling while developing. I have
-            written quite a few school projects in Java, and in my career have worked on ecommerce applications
+            written quite a few school projects in Java, and in my career have worked on e-commerce applications
             with Java at their core.`,
       icon: <FaJava />,
     },
@@ -126,7 +126,7 @@ export const skills = {
     },
     "Spring Boot": {
       info: `
-        I worked with Spring Boot to build a backend API service for an ecommerce application. I have experience with
+        I worked with Spring Boot to build a backend API service for an e-commerce application. I have experience with
         its service architecture, dependency injection, Hibernate and JPA integration with PostgreSQL. I find it to be a 
         very stable and clear system to work with.`,
       icon: <SiSpring />,

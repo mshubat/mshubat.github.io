@@ -43,9 +43,19 @@
     background-color: #FECC27;
 }
 
+.focusSkillIcon {
+    -webkit-animation:spin 5s linear infinite;
+    -moz-animation:spin 5s linear infinite;
+    animation:spin 5s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 .focusSkill {
     margin: auto;
-    padding: 1em;
+    padding: 1em 1em 2em 1em;
     text-align: center;
     color: white;
     display: block;

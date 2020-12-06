@@ -1,8 +1,10 @@
+// Package imports
 import React from "react";
 import { useState, useEffect } from "react";
 import "milligram";
 import { Helmet } from "react-helmet";
 
+// Project imports
 import { Nav } from "../components/nav/Nav";
 import { Header } from "../components/Header";
 import { Skills } from "../components/skills/Skills";

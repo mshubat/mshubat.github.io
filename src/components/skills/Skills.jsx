@@ -32,13 +32,15 @@ export const Skills = () => {
 
   if (focusSkill) {
     return (
-      <IconContext.Provider value={{ size: "5em", style: {marginBottom: "1em"} }}>
+      <IconContext.Provider value={{ size: "5em" }}>
         <div className={focusStyle(focusSkill)} onClick={() => setFocusSkill()}>
           <span className={styles.focusSkillHeading}>{focusSkill}</span>
           <p className={styles.focusSkillDescription}>
             {skills[focusSkill].info}
           </p>
-          {skills[focusSkill].icon}
+          <div className={styles.focusSkillIcon}>
+            {skills[focusSkill].icon}
+          </div>
         </div>
       </IconContext.Provider>
     )
