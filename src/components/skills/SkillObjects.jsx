@@ -42,7 +42,7 @@ export const skills = {
     Firebase: {
       info: `I have experience designing collection and document layouts taking into account the 
             application architecture in question. NoSQL design, and queries have become more 
-            intuitive to me over time and I really enjoy the flexibility the Firebase provides.
+            intuitive to me over time and I really enjoy the flexibility that Firebase provides.
             I also really like the Firebase streaming capability, when used in the right circumstances.`,
       icon: <SiFirebase />,
     },
@@ -63,15 +63,16 @@ export const skills = {
       info: `As the first OO language I learnt, Java will always have a special place in my heart. Though
             it is often criticized for being verbose, I find it to be extremely intuitive for designing 
             an OO system, and its types provide for a secure and reliable feeling while developing. I have
-            written quite a few school projects in Java, and in my career have worked on e-commerce applications
-            with Java at their core.`,
+            written quite a few school projects in Java, and in my career have worked on an e-commerce 
+            application and large system tests with Java at their core.`,
       icon: <FaJava />,
     },
     Python: {
       info: `
             🐍 I love Python. I find its lack of parentheses refreshing and its forced indentation to be clear
             and extremely legible. I have used Python in the past to write quick scripts and to solve algorithmic
-            problems. I also used Python to build my thesis project called Galaxy Data Mines.`,
+            problems. I also used Python to build my thesis project called Galaxy Data Mines. Its great community,
+            libraries and ease of use make it one of my favourite technologies.`,
       icon: <FaPython />,
     },
     Flask: {
@@ -90,7 +91,7 @@ export const skills = {
       info: `Working with C, and revisiting it over the years has taught me about lower level memory management
             and how computers do what they do. Using C has given me the experience to know a little more about what is
             going on under the hood. Call stacks, the stack vs heap, pointers and memory management all teach you valuable
-            lessons. Pointers were particularly helpful when learning JS as function pointers are highly similar.`,
+            lessons. Pointers were particularly helpful when learning JS, as function pointers are highly similar.`,
       icon: <SiC />,
     },
     HTML: {
@@ -104,22 +105,22 @@ export const skills = {
       icon: <SiJson />,
     },
     CSS: {
-      info: `A cruel mistress, yet a necessary evil...`,
+      info: `A cruel yet a necessary evil...`,
       icon: <SiCsswizardry />,
     },
     NoSQL: {
       info: `As mentioned in my Firebase description, I have really enjoyed the flexibility and fast evolution that NoSQL 
-            databases provide. Also this can be a more challenging concept to grasp coming form SQL DB's, it is worth 
+            databases provide. Although this can be a more challenging concept to grasp coming form SQL DB's, it is worth 
             the effort.`,
       icon: <FaDatabase />,
     },
-    "Material UI": {
-      info: `Used to style and build both Flutter apps and Reacts apps that I have worked on. The robust feature set
-            and theming options Material UI are what makes it a great component framework that I have enjoyed working with.`,
+    "Material-UI": {
+      info: `I have used Material-UI to style and build both Flutter apps and Reacts apps that I have worked on. Its robust feature set
+            and theming options are what make it a great component framework to work with.`,
       icon: <SiMaterialUi />,
     },
     Bootstrap: {
-      info: `Similarly to Material UI, the vast community and resources Bootstrap provides make it a great framework to 
+      info: `Similarly to Material-UI, the vast community and resources Bootstrap provides make it a great framework to 
             work with. Over the years, I have used Bootstrap to build small personal websites as well as larger web
             applications.`,
       icon: <SiBootstrap />,
