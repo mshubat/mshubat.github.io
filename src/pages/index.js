@@ -1,11 +1,13 @@
-import React from "react"
+import React from "react";
 import { useState, useEffect } from "react";
-import "milligram"
-import { Nav } from "../components/nav/Nav"
-import { Header } from "../components/Header"
-import { Skills } from "../components/skills/Skills"
-import { Projects } from "../components/projects/Projects"
-import { Section } from "../components/section/Section"
+import "milligram";
+import { Helmet } from "react-helmet";
+
+import { Nav } from "../components/nav/Nav";
+import { Header } from "../components/Header";
+import { Skills } from "../components/skills/Skills";
+import { Projects } from "../components/projects/Projects";
+import { Section } from "../components/section/Section";
 
 export default function Home() {
 
@@ -66,6 +68,9 @@ export default function Home() {
 
   return (
     <div className="container">
+      <Helmet>
+        <title>Matt Shubat</title>
+      </Helmet>
       <Nav />
       <Header 
         title={"Hi, I'm Matt"}
