@@ -14,7 +14,7 @@ export const Header = ({ title, children }) => {
   return (
     <div style={{margin: "25rem auto 25rem auto", width: "100%"}}>
       <h1 style={styles.title}>{title}</h1>
-      <p style={{margin: "0 auto", textAlign: "center", fontSize: "2rem"}}>
+      <p style={{margin: "0 auto", textAlign: "center", fontSize: "2rem", height: "2em"}}>
         {children}
       </p>
     </div>
