@@ -54,7 +54,7 @@ export const skills = {
     },
     SQL: {
       info: `I have experience working with SQL databases such as PostgreSQL, and MySQL. I am comfortable
-            writing queries to fetch data, join tables, updates records and so on. I also have
+            writing queries to fetch data, join tables, update records and so on. I also have
             experience laying out the model structure for the domain at hand and evolving that structure
             over time.`,
       icon: <SiPostgresql />,
