@@ -12,9 +12,16 @@ import { Projects } from "../components/projects/Projects";
 import { Section } from "../components/section/Section";
 
 export default function Home() {
-
+  
+  const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   
+  const titles = {
+    "default": "Hi, I'm Matt",
+    "12-25": "☃️ Merry Christmas 🎁",
+    "1-1": "🎆 Happy New Year ✨"
+  }
+
   const prefix = "I am a ";
   const phrases = [
     "software developer. Nice to Meet you 🤝", 
@@ -66,7 +73,18 @@ export default function Home() {
   useEffect(() => {
     window.scrollTo(0,0);
     type(phrases[0]);
+    loadData();
   }, []);
+
+  const loadData = () => {
+    const d = new Date();
+
+    let humanMonth = d.getMonth() + 1;   // 0 - 11
+    let day = d.getDate();      // 1 - 31
+
+    const monthDay = "1-1";//humanMonth+"-"+day;
+    setTitle(monthDay in titles ? titles[monthDay] : titles["default"]);
+  }
 
   return (
     <div className="container">
@@ -75,7 +93,7 @@ export default function Home() {
       </Helmet>
       <Nav />
       <Header 
-        title={"Hi, I'm Matt"}
+        title={title}
       >
         {description}
       </Header>
