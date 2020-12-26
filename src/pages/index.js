@@ -82,7 +82,7 @@ export default function Home() {
     let humanMonth = d.getMonth() + 1;   // 0 - 11
     let day = d.getDate();      // 1 - 31
 
-    const monthDay = "1-1";//humanMonth+"-"+day;
+    const monthDay = humanMonth+"-"+day;
     setTitle(monthDay in titles ? titles[monthDay] : titles["default"]);
   }
 
