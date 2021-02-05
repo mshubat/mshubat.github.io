@@ -13,7 +13,7 @@ export const Nav = () => {
     <nav styles={styles.nav}>
       <NavItem>
         <FaGithub className={styles.navIcon}/>
-        <a className={styles.navLink} href="https://github.com/mshubat">GitHub</a>
+        <a className={styles.navLink} href="https://github.com/mshubat">Projects</a>
       </NavItem>
       <NavItem>
         <FaHackerrank className={styles.navIcon}/>

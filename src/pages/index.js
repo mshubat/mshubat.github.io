@@ -107,14 +107,6 @@ export default function Home() {
         <Skills />
       </Section>
 
-      <Section 
-        title="Projects"
-        desc="Some projects I have worked on, and am working on."
-        titleAlign="center"
-        descAlign="center"
-      >
-        <Projects />
-      </Section>
     </div>
   )
 }

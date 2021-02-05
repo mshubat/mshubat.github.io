@@ -38,8 +38,10 @@ export const Skills = () => {
           <p className={styles.focusSkillDescription}>
             {skills[focusSkill].info}
           </p>
-          <div className={styles.focusSkillIcon}>
-            {skills[focusSkill].icon}
+          <div style={{display: "flex", justifyContent: "center"}}>
+            <div className={styles.focusSkillIcon}>
+              {skills[focusSkill].icon}
+            </div>
           </div>
         </div>
       </IconContext.Provider>
