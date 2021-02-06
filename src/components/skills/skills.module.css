@@ -126,11 +126,11 @@
   .skill4,
   .skill5,
   .skill6 {
-    background-color: #3e3a3a;
+    background-color: #3a3a3e;
   }
 
   .focusSkill, .focusSkillHeading, .focusSkillDescription {
-    color: rgb(49, 48, 48);
+    color: #e3e7ec;
   }
 
   .skill1:hover,
