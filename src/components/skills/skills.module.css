@@ -1,92 +1,161 @@
 .skillGrid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    /* grid-template-columns: repeat(5, 13rem); */
-    /* grid-auto-rows: 13rem; */
-    grid-gap: 1rem; 
-    margin-bottom: 5rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* grid-template-columns: repeat(5, 13rem); */
+  /* grid-auto-rows: 13rem; */
+  grid-gap: 1rem;
+  margin-bottom: 5rem;
 }
 
-.skillGrid > div::before { /* Make the aspect ratio of elements square */
-    content: "";
-    padding-bottom: 100%;
-    display: block;
-  }
-
-.skill1, .skill2, .skill3, .skill4, .skill5, .skill6 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: gainsboro;
-    border-radius: 6px;
-
+.skillGrid > div::before {
+  /* Make the aspect ratio of elements square */
+  content: "";
+  padding-bottom: 100%;
+  display: block;
 }
 
-.skill1:hover, .skill2:hover, .skill3:hover, .skill4:hover, .skill5:hover, .skill6 {
-    color: white;
+.skill1,
+.skill2,
+.skill3,
+.skill4,
+.skill5,
+.skill6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: gainsboro;
+  border-radius: 6px;
 }
 
-.skill1:hover, .focusSkill1 {
-    background-color: #c25959;
+.skill1:hover,
+.skill2:hover,
+.skill3:hover,
+.skill4:hover,
+.skill5:hover,
+.skill6 {
+  color: white;
 }
-.skill2:hover, .focusSkill2 {
-    background-color: #A58981;
+
+.skill1:hover,
+.focusSkill1 {
+  background-color: #c25959;
 }
-.skill3:hover, .focusSkill3 {
-    background-color: #3C579E;
+.skill2:hover,
+.focusSkill2 {
+  background-color: #a58981;
 }
-.skill4:hover, .focusSkill4 {
-    background-color: #9E6463;
+.skill3:hover,
+.focusSkill3 {
+  background-color: #3c579e;
 }
-.skill5:hover, .focusSkill5 {
-    background-color: #FECC27;
+.skill4:hover,
+.focusSkill4 {
+  background-color: #9e6463;
 }
+.skill5:hover,
+.focusSkill5 {
+  background-color: #fecc27;
+}
+
 
 .focusSkillIcon {
-  -webkit-animation:spin 5s linear 1;
-  -moz-animation:spin 5s linear 1;
-  animation:spin 5s linear 1;
+  -webkit-animation: spin 5s linear 1;
+  -moz-animation: spin 5s linear 1;
+  animation: spin 5s linear 1;
 }
 
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
 .focusSkill {
-    margin: auto;
-    margin-bottom: 5rem;
-    padding: 1em 1em 2em 1em;
-    text-align: center;
-    color: white;
-    display: block;
-    width: 80%;
-    height: auto;
-    border-radius: 6px;
+  margin: auto;
+  margin-bottom: 5rem;
+  padding: 1em 1em 2em 1em;
+  text-align: center;
+  color: white;
+  display: block;
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
 }
 .focusSkillHeading {
-    font-size: 5em;
-    font-weight: bold;
-    color: white;
+  font-size: 5em;
+  font-weight: bold;
+  color: white;
 }
 .focusSkillDescription {
-    color: white;
-    margin: 2em;
+  color: white;
+  margin: 2em;
 }
 
-
 @media screen and (max-width: 600px) {
-    .skillGrid {
-        grid-template-columns: repeat(3, minmax(90px, 1fr));
-    }
-    .focusSkill {
-        width: 100%;
-    }
-    .focusSkillHeading {
-        font-size: 2em;
-    }
-    .focusSkillDescription {
-        margin: 1em;
-    }
+  .skillGrid {
+    grid-template-columns: repeat(3, minmax(90px, 1fr));
+  }
+  .focusSkill {
+    width: 100%;
+  }
+  .focusSkillHeading {
+    font-size: 2em;
+  }
+  .focusSkillDescription {
+    margin: 1em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .skill1,
+  .skill2,
+  .skill3,
+  .skill4,
+  .skill5,
+  .skill6 {
+    background-color: #3e3a3a;
+  }
+
+  .focusSkill, .focusSkillHeading, .focusSkillDescription {
+    color: rgb(49, 48, 48);
+  }
+
+  .skill1:hover,
+  .focusSkill1 {
+    background-color: #8a4c4c;
+  }
+  .skill2:hover,
+  .focusSkill2 {
+    background-color: #a58981;
+  }
+  .skill3:hover,
+  .focusSkill3 {
+    background-color: #3c579e;
+  }
+  .skill4:hover,
+  .focusSkill4 {
+    background-color: #9e6463;
+  }
+  .skill5:hover,
+  .focusSkill5 {
+    background-color: #fecc27;
+  }
+
+  .skill5:hover,
+  .focusSkill5 {
+    background-color: #9c9038;
+  }
 }
